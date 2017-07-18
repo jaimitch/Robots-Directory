@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title>User Profile</title>
+  </head>
+  <body>
+ {{#id}}
+   <div class='container'>
+        <div class ='img'>
+            <img class='img' src = {{avatar}}>
+        </div>
+        <div class='part-two'>
+            {{#name}}<div class='name'>{{name}}</div>{{/name}}
+            {{#city}}<div class='city'>{{city}}</div>{{/city}}
+            {{^city}}<div class= 'no-city'>{{city}}</div>{{/city}}
+            {{#country}}<div class='country'>{{country}}</div>{{/country}}
+            {{#job}}<div class= 'job'>{{job}},</div>{{/job}}
+            {{^job}}<div class= 'nojob'>Available for Hire</div>{{/job}}
+            {{#company}}<div class='company'>{{company}}</div>{{/company}}
+        </div>
+        <div class= 'part-three'>
+            {{#email}}<div class= 'email'>{{email}}</div>{{/email}}
+            {{phone}}<div class= 'phone'>{{phone}}</div>{{/phone}}
+        </div>
+        <div class= 'part-four'>
+            {{#university}}<div class= 'university'>{{university}}</div>{{/university}}
+            {{^university}}<div class= 'no-university'>{{university}}</div>{{/university}}
+            {{#skills}}<div class= 'skills'>{{skills}}</div>{{/skills}}
+        </div>
+   </div>
+{{/id}}
+  </body>
+</html>
