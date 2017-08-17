@@ -2,14 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="stylesheet" type="text/css" href=".styles.css">
     <title>User Profile</title>
   </head>
   <body>
- {{#id}}
+{{#id}}
    <div class='container'>
-        <div class ='img'>
-            <img class='img' src = {{avatar}}>
+        <div class ='part-one'>
+            <img class='img' src= {{avatar}}>
         </div>
         <div class='part-two'>
             {{#name}}<div class='name'>{{name}}</div>{{/name}}
@@ -22,12 +22,12 @@
         </div>
         <div class= 'part-three'>
             {{#email}}<div class= 'email'>{{email}}</div>{{/email}}
-            {{phone}}<div class= 'phone'>{{phone}}</div>{{/phone}}
+            {{#phone}}<div class= 'phone'>{{phone}}</div>{{/phone}}
         </div>
         <div class= 'part-four'>
             {{#university}}<div class= 'university'>{{university}}</div>{{/university}}
             {{^university}}<div class= 'no-university'>{{university}}</div>{{/university}}
-            {{#skills}}<div class= 'skills'>{{skills}}</div>{{/skills}}
+            <div class= 'skills'>{{skills}}</div>
         </div>
    </div>
 {{/id}}

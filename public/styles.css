@@ -1,4 +1,4 @@
-body {
+ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -24,6 +24,6 @@ body {
 
 .nojob {
     color: #D91E18;
-}
+} 
 
 

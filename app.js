@@ -23,8 +23,11 @@ application.get('/', function (request, response) {
 
 application.get('/:userInfo', (request, response) => {
     var user = robots.users[request.params.userInfo -1]
+//    var ID = parseInt(request.params.id);
+//    var user = ID = -1;
+    
     response.render('robots', user);
 });
 
 
-// application.listen(3000);
+application.listen(3000);

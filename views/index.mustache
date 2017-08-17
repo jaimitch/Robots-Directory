@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="./styles.css">
-    <title></title>
+    <title>Users</title>
   </head>
   <body>
-  {{#users}}
+{{#users}}
    <div class="container">
         <img class="img" src= {{avatar}}>
-        <a class = "robot-name" href= {{id}}>{{name}}</a>
+        <a class = "robot-name" href='{{id}}'>{{name}}</a>
         {{#job}}<div class = 'job'>{{job}},</div>{{/job}}
         {{^job}}<div class = 'nojob'>Available for Hire</div>{{/job}}
         <div class = 'company'>{{company}}</div>
